@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f8;
+}
+
+/* Title */
+.title {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title h2 {
+  color: goldenrod;
+  font-size: 2rem;
+}
+
+/* Questions Container */
+.section-center {
+  width: 90%;
+  max-width: 620px;
+  margin: auto;
+}
+
+/* Single Question Box */
+.question {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Heading */
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-title p {
+  color: #222;
+  margin: 0;
+}
+
+/* Plus/Minus Button */
+.question-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+
+/* Answer Text */
+.question-text {
+  display: none;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid lightgray;
+}
+
+/* JavaScript Classes */
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
